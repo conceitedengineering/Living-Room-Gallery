@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Divs</title>
+    <script type="module">
+        import "https://unpkg.com/playhtml";
+        playhtml.init();
+    </script>
+    <style>
+        .div1 {
+            max-width: 20px;  /* Maximum width */
+            max-height: 20px; /* Maximum height */
+            margin: 10px;
+            position: relative; /* Adjusting position for draggable functionality */
+            cursor: grab; /* Cursor style for draggable elements */
+
+        }
+        iframe {
+            z-index: -200;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="div1" can-move> <img src="white_flower_s.png"></div>
+        <div class="div1" can-move> <img src="money_s.png"></div>
+        <div class="div1" can-move> <img src="Monster_s.png"></div>
+        <div class="div1" can-move> <img src="pathos_s.png"></div>
+        <div class="div1" can-move> <img src="couch.png"></div>
+        <div class="div1" can-move> <img src="SlaG_Magic Shwarma.jpeg"></div>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=17L1ahq27ro" frameborder="0" allowfullscreen></iframe>
+
+
+</body>
+</body>
+</html>
