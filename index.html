@@ -31,16 +31,17 @@
         
         .iframe-container {
             position: relative; /* Sets the positioning context for child elements */
+            width: 560px;
+            height: 315px;
+            z-index: -250; 
 }
 
         iframe {
-            width: 560px;
-            height: 315px;
-            z-index: -200; 
+            
 }
 
         .overlay-image {
-             position: absolute; /* Positions the image relative to the container */
+            position: absolute; /* Positions the image relative to the container */
             top: 0; /* Aligns the top of the image with the container */
             left: 0; /* Aligns the left of the image with the container */
             z-index: -150; /* z-index lower than the iframe but higher than -150 */
