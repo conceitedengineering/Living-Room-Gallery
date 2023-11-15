@@ -29,21 +29,24 @@
                 transform: translate(-50%, -50%); 
                 z-index: -200;         */
         
-        .iframe-container {
-            position: relative; /* Sets the positioning context */
-            display: block; /* To apply margin auto */
-            margin: auto; /* Centers the container horizontally */
-            top: 50%; /* 50% from the top of the viewport */
-            left: 50%; /* 50% from the left of the viewport */
-            transform: translate(-50%, -50%); /* Centering the container */
-            z-index: -350; /* z-index for the container */
-} 
+                .iframe-container {
+    position: relative; /* Set positioning context for children */
+    z-index: -200; /* z-index for the container */
+}
 
+iframe {
+    width: 560px; /* Width of the iframe */
+    height: 315px; /* Height of the iframe */
+    z-index: -200; /* Keep iframe z-index */
+}
 
-        .overlay-image {
-            width: 560px;
-            height: 315px;
-            z-index: -200;
+.overlay-image {
+    position: absolute; /* Absolute position within the container */
+    top: 0; /* Align top edge with container */
+    left: 0; /* Align left edge with container */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    z-index: -150; /* z-index for the overlay image */
 }
 
 
