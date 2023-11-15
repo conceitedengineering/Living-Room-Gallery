@@ -19,7 +19,18 @@
 
         }
         iframe {
-            z-index: -200;
+        display: block;       /* Makes the element a block-level element */
+        margin: auto;         /* Centers horizontally */
+        position: absolute;   /* Absolute positioning */
+        top: 50%;             /* 50% from the top of the viewport */
+        left: 50%;            /* 50% from the left of the viewport */
+        transform: translate(-50%, -50%); /* Shifts the element back by half its width and height */
+        z-index: -200;        /* Keeps the z-index as before */
+            }
+
+        body {
+        height: 100vh;        /* Ensures the body covers the full viewport height */
+        margin: 0;            /* Removes default margin */
         }
     </style>
         <div id="cursor-chat-layer">
