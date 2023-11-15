@@ -37,16 +37,16 @@
 iframe {
     width: 560px; /* Width of the iframe */
     height: 315px; /* Height of the iframe */
-    z-index: -200; /* Keep iframe z-index */
+    z-index: -350; /* Keep iframe z-index */
 }
 
 .overlay-image {
     position: absolute; /* Absolute position within the container */
-    top: 0; /* Align top edge with container */
-    left: 0; /* Align left edge with container */
-    width: 100%; /* Full width of the container */
-    height: 100%; /* Full height of the container */
-    z-index: -150; /* z-index for the overlay image */
+    top: 50%; /* Align top edge with the middle of the container */
+    left: 50%; /* Align left edge with the middle of the container */
+    transform: translate(-50%, -50%); /* Center the image */
+    z-index: -250; /* z-index for the overlay image */
+    /* Set specific width and height if needed */
 }
 
 
@@ -77,8 +77,9 @@ iframe {
     </div>
 
     <div class="iframe-container">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/17L1ahq27ro?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
     <img src="Curtain2.png" class="overlay-image" />
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/17L1ahq27ro?autoplay=1&mute=1" frameborder="0" allowfullscreen></iframe>
+   
     </div>
 
 
