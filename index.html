@@ -30,22 +30,20 @@
                 z-index: -200;         */
         
         .iframe-container {
-            position: relative; /* Sets the positioning context for child elements */
-            width: 560px;
-            height: 315px;
-            z-index: -250; 
-}
+            position: relative; /* Sets the positioning context */
+            display: block; /* To apply margin auto */
+            margin: auto; /* Centers the container horizontally */
+            top: 50%; /* 50% from the top of the viewport */
+            left: 50%; /* 50% from the left of the viewport */
+            transform: translate(-50%, -50%); /* Centering the container */
+            z-index: -350; /* z-index for the container */
+} 
 
-        iframe {
-            
-}
 
         .overlay-image {
-            position: absolute; /* Positions the image relative to the container */
-            top: 0; /* Aligns the top of the image with the container */
-            left: 0; /* Aligns the left of the image with the container */
-            z-index: -150; /* z-index lower than the iframe but higher than -150 */
-    
+            width: 560px;
+            height: 315px;
+            z-index: -200;
 }
 
 
