@@ -22,6 +22,15 @@
             z-index: -200;
         }
     </style>
+        <div id="cursor-chat-layer">
+  <input type="text" id="cursor-chat-box">
+</div>
+<script type="module">
+  import { initCursorChat } from 'https://esm.sh/cursor-chat'
+  initCursorChat("your-room-name-here")
+</script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/cursor-chat/dist/style.css"/>
+
 </head>
 <body>
     <div id="container">
@@ -37,13 +46,4 @@
 
 </body>
 </body>
-    <div id="cursor-chat-layer">
-  <input type="text" id="cursor-chat-box">
-</div>
-<script type="module">
-  import { initCursorChat } from 'https://esm.sh/cursor-chat'
-  initCursorChat("your-room-name-here")
-</script>
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/cursor-chat/dist/style.css"/>
-
 </html>
